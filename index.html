@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tuorps Preview</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="wrap">
+
+    <header class="top">
+      <div class="brandRow">
+        <div class="logo">Tuorps</div>
+      </div>
+
+      <section class="intro">
+        <div class="label">Description / Intro</div>
+<div class="introText">
+  <p>Welcome — this is a simple preview page for my content.</p>
+
+  <p>
+    To purchase, message <strong>@Tuorps_PaymentBot</strong> on Telegram to get started.
+    <strong>Lifetime VIP is $45.</strong> It comes with everything.
+  </p>
+
+  <p>
+    I update the library regularly as I’m always finding and adding more. After purchase, everything is easy to view and download.
+    My goal is to keep this simple, reliable, and a solid deal.
+  </p>
+
+  <p>
+    Below are examples of what’s included, organized by category with an emphasis on real, candid content.
+    Each category only shows a few random screenshots so you know what to expect, but there are hundreds more within each category. There are also many more categories not listed below.
+  </p>
+
+  <p>Rarest of all is the Identified section — videos that include real names or social profiles. 
+    These aren’t posted anywhere else; in almost every case, I found the source myself. This is just a small taste of the full collection.
+  </p>
+
+  <p><strong>More previews:</strong></p>
+  <p>
+    <a href="https://www.redgifs.com/users/tuorps1" target="_blank" rel="noopener noreferrer">
+      redgifs.com/users/tuorps1
+    </a><br>
+    <a href="https://www.erome.com/tuorps100" target="_blank" rel="noopener noreferrer">
+      erome.com/tuorps100
+    </a>
+  </p>
+</div>
+
+      </section>
+    </header>
+
+    <!-- Sections injected by script.js (Identified first) -->
+    <section class="section" id="identifiedSection" aria-label="Identified"></section>
+    <section class="section" id="rareSection" aria-label="Rare Series"></section>
+    <section class="section" id="categoriesSection" aria-label="Categories"></section>
+
+    <section class="faq" id="faq">
+  <h2>FAQ</h2>
+
+  <details>
+    <summary>How is content accessed?</summary>
+    <p>After purchase, links will be sent from @Tuorps_PaymentBot on Telegram to various storage websites, where you can view and download content.</p>
+  </details>
+
+  <details>
+    <summary>Why can't you share content on Telegram?</summary>
+    <p>The channels have been repeatedly removed, so this will be the method going forward.</p>
+  </details>
+
+  <details>
+    <summary>When is new content added?</summary>
+    <p>There is no set schedule, but every 1-2 months. The content additions are generally very large, and announced via telegram so you know when it happens.</p>
+  </details>
+
+  <details>
+    <summary>Do you trade or take requests?</summary>
+    <p>Yes, feel free to message me after joining.</p>
+  </details>
+
+  <details>
+    <summary>Does the content stay up forever?</summary>
+    <p>Yes, you always have access.</p>
+  </details>
+</section>
+
+
+    <footer class="foot">
+      <small>© <span id="year"></span> Tuorps</small>
+    </footer>
+
+  </main>
+
+  <!-- Modal (hidden by default) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modalBackdrop" id="modalBackdrop"></div>
+    <div class="modalPanel" role="dialog" aria-modal="true" aria-label="Preview">
+      <button class="modalClose" id="modalClose" type="button" aria-label="Close">×</button>
+      <div class="modalMedia" id="modalMedia"></div>
+      <div class="modalMeta">
+        <div class="modalTitle" id="modalTitle"></div>
+        <div class="modalDesc" id="modalDesc"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <div id="ageGate" class="age-gate" aria-hidden="true">
+  <div class="age-card">
+    <h2>18+ Only</h2>
+    <p>You must be 18+ to enter. By continuing, you confirm you are at least 18 years old.</p>
+    <div class="age-actions">
+      <button id="ageYes" class="btn">I’m 18+ — Enter</button>
+      <a id="ageNo" class="btn btn-secondary" href="https://www.google.com">Exit</a>
+    </div>
+    <p class="age-note"></p>
+  </div>
+</div>
+
+<script>
+  (function() {
+    const KEY = "age_ok_v1";
+    const gate = document.getElementById("ageGate");
+    const yes = document.getElementById("ageYes");
+
+    if (!gate || !yes) return;
+
+    const ok = localStorage.getItem(KEY) === "1";
+    if (!ok) {
+      gate.classList.add("show");
+      gate.setAttribute("aria-hidden", "false");
+    }
+
+    yes.addEventListener("click", function() {
+      localStorage.setItem(KEY, "1");
+      gate.classList.remove("show");
+      gate.setAttribute("aria-hidden", "true");
+    });
+  })();
+</script>
+
+
+</body>
+</html>
