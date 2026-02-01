@@ -6,7 +6,7 @@
     "BJ",
     "Desi",
     "Window",
-    "Category G",
+    "Public",
     "Category H",
     "Category I",
     "Category J"
@@ -183,6 +183,7 @@
       "description": "Size of Category: 100+ videos.",
       "type": "image",
       "src": "assets/bj.jpg",
+      "preview":"assets/bj.mp4",
       "category": "BJ",
       "identified": false,
       "rare": false
@@ -193,6 +194,7 @@
       "description": "Size of Category: 60+ videos.",
       "type": "image",
       "src": "assets/window.jpg",
+      "gif": "assets/window.gif",
       "category": "Window",
       "identified": false,
       "rare": false
@@ -207,6 +209,16 @@
       "identified": false,
       "rare": false
     },    
+    {
+      "id": "ID-004",
+      "title": "Public",
+      "description": "Risky acts in public.",
+      "type": "image",
+      "src": "assets/public.png",
+      "category": "Public",
+      "identified": false,
+      "rare": false
+    },
     {
       "id": "R-003",
       "title": "Japanese Car Series",
@@ -258,11 +270,22 @@
       "rare": true
     },
     {
+      "id": "R-006",
+      "title": "Foshan369",
+      "description": "A man with expensive taste in escorts. I was one of the less than 100 subscibers to his website where he released this series. He has since disappeared.",
+      "type": "image",
+      "src": "assets/foshan.jpg",
+      "category": "Series",
+      "identified": false,
+      "rare": true
+    },
+    {
       "id": "ID-005",
       "title": "Hidden",
       "description": "The largest category of course. This includes all videos that do not fit in a specific category.",
       "type": "image",
       "src": "assets/preview3.png",
+      "gif": "assets/hidden.gif",
       "category": "Hidden",
       "identified": false,
       "rare": false

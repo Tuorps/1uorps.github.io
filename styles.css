@@ -373,4 +373,53 @@ body{
   font-size: 0.92rem;
   opacity: 0.75;
 }
+/* Two-up media (image + gif) inside a single card */
+.mediaSplit{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
 
+.mediaSplit img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* On small screens, stack them */
+@media (max-width: 520px){
+  .mediaSplit{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Two separate media boxes (image + gif) inside a card */
+.mediaSplit{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 12px;
+}
+
+.mediaBox{
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+  aspect-ratio: 16 / 9;
+}
+
+.mediaBox img,
+.mediaBox video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 520px){
+  .mediaSplit{
+    grid-template-columns: 1fr;
+  }
+}

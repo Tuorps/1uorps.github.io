@@ -52,11 +52,19 @@ function sectionHeader(title, subText = "") {
   `;
 }
 
+function isVideoFile(path = "") {
+  const p = String(path).toLowerCase();
+  return p.endsWith(".mp4") || p.endsWith(".webm") || p.endsWith(".mov");
+}
+
 function cardTemplate(item) {
   const title = escapeHtml(item.title || "");
   const desc = escapeHtml(item.description || "");
 
-  const media =
+  const previewPath = (item.preview || item.gif || "").trim(); // supports old "gif" too
+  const hasPreview = !!previewPath;
+
+  const primaryMedia =
     item.type === "video"
       ? `
         <video
@@ -70,18 +78,50 @@ function cardTemplate(item) {
         ></video>`
       : `<img loading="lazy" src="${escapeHtml(item.src || "")}" alt="${title} preview" />`;
 
+  let previewMedia = "";
+  if (hasPreview) {
+    if (isVideoFile(previewPath)) {
+      // Looped silent preview video (loads only when visible)
+      previewMedia = `
+        <video
+          class="sidePreviewVideo"
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          data-src="${escapeHtml(previewPath)}"
+        ></video>
+      `;
+    } else {
+      // Fallback image preview (gif/webp/jpg/png)
+      previewMedia = `<img loading="lazy" src="${escapeHtml(previewPath)}" alt="${title} preview clip" />`;
+    }
+  }
+
+  const mediaHtml = hasPreview
+    ? `
+      <div class="mediaSplit">
+        <div class="mediaBox" data-media="main">${primaryMedia}</div>
+        <div class="mediaBox" data-media="preview">${previewMedia}</div>
+      </div>
+    `
+    : `
+      <div class="media">
+        ${primaryMedia}
+      </div>
+    `;
+
   return `
     <article
       class="card"
       data-type="${escapeHtml(item.type || "image")}"
       data-src="${escapeHtml(item.src || "")}"
+      data-preview="${escapeHtml(previewPath)}"
       data-poster="${escapeHtml(item.poster || "")}"
       data-title="${title}"
       data-desc="${desc}"
     >
-      <div class="media">
-        ${media}
-      </div>
+      ${mediaHtml}
       <div class="content">
         <h3 class="title">${title}</h3>
         <p class="desc">${desc}</p>
@@ -90,20 +130,26 @@ function cardTemplate(item) {
   `;
 }
 
+
+
+
 function renderGrid(items) {
   if (!items.length) return `<div class="empty">Nothing here yet.</div>`;
   return `<div class="grid">${items.map(cardTemplate).join("")}</div>`;
 }
 
 function setupVideoLazyPlay() {
-  const videos = [...document.querySelectorAll(".previewVideo")];
+  const videos = [
+    ...document.querySelectorAll(".previewVideo"),
+    ...document.querySelectorAll(".sidePreviewVideo")
+  ];
   if (!videos.length) return;
 
   const io = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       const v = entry.target;
       if (entry.isIntersecting) {
-        if (!v.src) v.src = v.dataset.src;
+        if (!v.src) v.src = v.dataset.src; // only load when visible
         v.play().catch(() => {});
       } else {
         v.pause();
@@ -114,29 +160,48 @@ function setupVideoLazyPlay() {
   videos.forEach(v => io.observe(v));
 }
 
+
 /* ===== Modal ===== */
-function openModalFromCard(card) {
+/* ===== Modal ===== */
+function openModalFromCard(card, opts = {}) {
   const type = card.dataset.type || "image";
   const src = card.dataset.src || "";
+  const preview = card.dataset.preview || "";
   const poster = card.dataset.poster || "";
   const title = card.dataset.title || "";
   const desc = card.dataset.desc || "";
+
+  const mediaKind = opts.mediaKind || "main"; // "main" or "preview"
+  const chosenSrc = (mediaKind === "preview" && preview) ? preview : src;
 
   modalTitle.textContent = title;
   modalDesc.textContent = desc;
 
   modalMedia.innerHTML = "";
 
-  if (type === "video") {
+  if (mediaKind === "preview" && preview) {
+    if (isVideoFile(chosenSrc)) {
+      const v = document.createElement("video");
+      v.controls = true;
+      v.playsInline = true;
+      v.src = chosenSrc;
+      modalMedia.appendChild(v);
+    } else {
+      const img = document.createElement("img");
+      img.src = chosenSrc;
+      img.alt = title || "Preview";
+      modalMedia.appendChild(img);
+    }
+  } else if (type === "video") {
     const v = document.createElement("video");
     v.controls = true;
     v.playsInline = true;
-    v.src = src;
+    v.src = chosenSrc;
     if (poster) v.poster = poster;
     modalMedia.appendChild(v);
   } else {
     const img = document.createElement("img");
-    img.src = src;
+    img.src = chosenSrc;
     img.alt = title || "Preview";
     modalMedia.appendChild(img);
   }
@@ -153,20 +218,41 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
-modalBackdrop.addEventListener("click", closeModal);
-modalClose.addEventListener("click", closeModal);
+// Close when clicking backdrop
+modalBackdrop.addEventListener("click", (e) => {
+  e.stopPropagation();
+  closeModal();
+});
 
+// Close when clicking X
+modalClose.addEventListener("click", (e) => {
+  e.stopPropagation();
+  closeModal();
+});
+
+// Close on Escape key
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.classList.contains("isOpen")) closeModal();
 });
 
+
+
 function setupCardClicks() {
   document.addEventListener("click", (e) => {
+    if (modal.classList.contains("isOpen") || e.target.closest("#modal")) return;
+
     const card = e.target.closest(".card");
     if (!card) return;
-    openModalFromCard(card);
+
+    const box = e.target.closest(".mediaBox");
+    const mediaKind = box?.dataset?.media || "main"; // "main" or "preview"
+
+    openModalFromCard(card, { mediaKind });
   });
 }
+
+
+
 
 /* ===== Sections ===== */
 function renderIdentified(items, sectionDescriptions) {
