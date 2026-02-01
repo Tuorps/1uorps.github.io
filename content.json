@@ -285,7 +285,7 @@
       "description": "The largest category of course. This includes all videos that do not fit in a specific category.",
       "type": "image",
       "src": "assets/preview3.png",
-      "gif": "assets/hidden.gif",
+      "preview": "assets/hidden.mp4",
       "category": "Hidden",
       "identified": false,
       "rare": false
