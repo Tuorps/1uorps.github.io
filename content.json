@@ -28,16 +28,6 @@
       "rare": false
     },
     {
-      "id": "ID-001",
-      "title": "College Student",
-      "description": "",
-      "type": "image",
-      "src": "assets/p1.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
       "id": "ID-002",
       "title": "Med Student",
       "description": "",
