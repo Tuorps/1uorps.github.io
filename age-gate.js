@@ -16,13 +16,15 @@
 
     // Do not load the renderer, gallery data or pictures before confirmation.
     const script = document.createElement('script');
-    script.src = 'script.js';
+    const pageScript = site.dataset.pageScript || 'script.js';
+    script.src = pageScript === 'advertisers.js' ? 'advertisers.js' : 'script.js';
     script.addEventListener('error', () => {
-      document.getElementById('preview-sections').textContent = 'The gallery could not be loaded. Please refresh and try again.';
+      const status = document.getElementById('pageStatus') || document.getElementById('preview-sections');
+      if (status) { status.hidden = false; status.textContent = 'The page could not be loaded. Please refresh and try again.'; }
     });
     document.head.appendChild(script);
 
-    const heading = document.getElementById('introTitle');
+    const heading = document.getElementById('introTitle') || document.getElementById('advertiserTitle');
     heading.setAttribute('tabindex', '-1');
     heading.focus({ preventScroll: true });
   }
