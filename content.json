@@ -1,294 +1,410 @@
 {
-  "categories": [
-    "Hidden",
-    "Escort",
-    "Car",
-    "BJ",
-    "Desi",
-    "Window",
-    "Public",
-    "Category H",
-    "Category I",
-    "Category J"
-  ],
-  "sectionDescriptions": {
-  "identified": "The rarest tier — identified content. This is just a small sample. There are much more in the full library.",
-  "rare": "Rare series previews. There are many more series not shown here.",
-  "categories": "Browse previews by category. Each category include hundreds of videos."
-  },
-  "items": [
+  "sections": [
     {
-      "id": "ID-013",
-      "title": "Colombian",
-      "description": "This ID Comes from the Colombian GoPro Series, which contains more IDs as well.",
-      "type": "image",
-      "src": "assets/go1.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
+      "id": "featured",
+      "title": "Socials",
+      "description": "Here are just a few examples of videos with their social media attached. I provide clear proof that it's connected and authentic. There are many more like this in the full collection, where the blur is removed.",
+      "items": [
+        {
+          "id": "item-001",
+          "title": "Colombian Milf",
+          "description": "This babe comes from the Colombian Go-Pro series, many more like this provided in that collection.",
+          "type": "image",
+          "src": "assets/images/image-009.jpg",
+          "width": 608,
+          "height": 971
+        },
+        {
+          "id": "item-002",
+          "title": "Med Student",
+          "description": "",
+          "type": "image",
+          "src": "assets/images/image-017.jpg",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "item-003",
+          "title": "Cheater Busted",
+          "description": "Watch them bounce.",
+          "type": "image",
+          "src": "assets/images/image-018.jpg",
+          "width": 1693,
+          "height": 1080
+        },
+        {
+          "id": "item-004",
+          "title": "German College Student",
+          "description": "",
+          "type": "image",
+          "src": "assets/images/image-019.jpg",
+          "width": 1024,
+          "height": 767
+        },
+        {
+          "id": "item-005",
+          "title": "Sugar Baby Exposed",
+          "description": "",
+          "type": "image",
+          "src": "assets/images/image-020.jpg",
+          "width": 810,
+          "height": 576
+        },
+        {
+          "id": "item-006",
+          "title": "Hot Nurse",
+          "description": "",
+          "type": "image",
+          "src": "assets/images/image-021.jpg",
+          "width": 855,
+          "height": 848
+        },
+        {
+          "id": "item-007",
+          "title": "Famous Influencer",
+          "description": "I provide proof of the match in many cases, as seen in this photo.",
+          "type": "image",
+          "src": "assets/images/image-022.jpg",
+          "width": 1403,
+          "height": 906
+        },
+        {
+          "id": "item-008",
+          "title": "Country Gal",
+          "description": "",
+          "type": "image",
+          "src": "assets/images/image-023.jpg",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "id": "item-009",
+          "title": "Skater Girl",
+          "description": "Tattoo is a match.",
+          "type": "image",
+          "src": "assets/images/image-024.jpg",
+          "width": 1304,
+          "height": 950
+        },
+        {
+          "id": "item-010",
+          "title": "Brazilian Car Saleswoman",
+          "description": "There are many more videos and socials from this collection: Brazilian Beauties.",
+          "type": "image",
+          "src": "assets/images/image-014.jpg",
+          "width": 864,
+          "height": 480
+        },
+        {
+          "id": "item-011",
+          "title": "Busted in public at a festival",
+          "description": "",
+          "type": "image",
+          "src": "assets/images/image-015.jpg",
+          "width": 1114,
+          "height": 848
+        },
+        {
+          "id": "item-012",
+          "title": "Braces",
+          "description": "",
+          "type": "image",
+          "src": "assets/images/image-016.jpg",
+          "width": 1927,
+          "height": 1024
+        }
+      ]
     },
     {
-      "id": "ID-002",
-      "title": "Med Student",
-      "description": "",
-      "type": "image",
-      "src": "assets/p2.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
+      "id": "collection-a",
+      "title": "Collections",
+      "description": "Random screenshots from some collections. There are way more collections available in the membership.",
+      "items": [
+        {
+          "id": "item-019",
+          "title": "Japanese Car",
+          "description": "A rare collection with 50+ videos, all true amateur (notice the lack of censorship for Japanese content).",
+          "type": "image",
+          "src": "assets/images/image-010.jpg",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-020",
+          "title": "Max Steel",
+          "description": "A massive collection that was expensive to purchase, this one alone pays for your membership.",
+          "type": "image",
+          "src": "assets/images/image-013.jpg",
+          "width": 3200,
+          "height": 720
+        },
+        {
+          "id": "item-021",
+          "title": "Brazilian Beauties",
+          "description": "30+ Videos with socials provided. True amateur.",
+          "type": "image",
+          "src": "assets/images/image-011.jpg",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-022",
+          "title": "BDIMWF",
+          "description": "A traveling brown man known as BDIMWF somehow met these babes. socials provided",
+          "type": "image",
+          "src": "assets/images/image-002.jpg",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-023",
+          "title": "Linelias",
+          "description": "A legendary series from a creator who has disappeared. Access the most extensive collection ever assembled, socials and rare pictures included.",
+          "type": "image",
+          "src": "assets/images/image-012.jpg",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-025",
+          "title": "Smiley / Conabula / Quish / Silicon Valley",
+          "description": "This collection has many names, and remains one of the most legendary escort series on the web. I have exclusive extended HD versions, along with socials on almost every video. There are many more than shown here.",
+          "type": "image",
+          "src": "assets/images/image-036.jpg",
+          "width": 2560,
+          "height": 1440,
+          "thumbnail": "assets/images/image-036-thumb.jpg",
+          "layout": "wide"
+        },
+        {
+          "id": "item-026",
+          "title": "Thai Students",
+          "description": "Students working their side job.",
+          "type": "image",
+          "src": "assets/images/image-041.jpg",
+          "width": 2560,
+          "height": 1440,
+          "layout": "wide",
+          "thumbnail": "assets/images/image-041-thumb.jpg"
+        },
+        {
+          "id": "item-027",
+          "title": "Galician Night",
+          "description": "This collection has 100+ episodes, all at least an hour long and in their original HD format. Filmed covertly in public in Spain and the UK using night vision. I've gone the extra mile to colorize the best episodes using cutting edge ai coded by me. ",
+          "type": "image",
+          "src": "assets/images/image-042.jpg",
+          "width": 2560,
+          "height": 1440,
+          "layout": "wide",
+          "thumbnail": "assets/images/image-042-thumb.jpg"
+        },
+        {
+          "id": "item-032",
+          "title": "GoPro",
+          "description": "An authentic spy series made in Colombia with help from Tinder.",
+          "type": "image",
+          "src": "assets/images/image-044.jpg",
+          "thumbnail": "assets/images/image-044-thumb.jpg",
+          "width": 2560,
+          "height": 1440,
+          "layout": "wide"
+        },
+        {
+          "id": "item-033",
+          "title": "Foshan369",
+          "description": "This collection was created by an Asian businessman who traveled the world, and seemingly spent his entire paycheck on the best women he could find. I was one of the less than 100 subscribers on his website before he disappeared. 40 videos provided.",
+          "type": "image",
+          "src": "assets/images/foshan-collage.jpg",
+          "width": 5120,
+          "height": 1440,
+          "layout": "wide",
+          "thumbnail": "assets/images/foshan-collage-thumb.jpg"
+        },
+        {
+          "id": "item-034",
+          "title": "Spanish Car",
+          "description": "Spain has amazing women.",
+          "type": "image",
+          "src": "assets/images/spanish-car.jpg",
+          "width": 1944,
+          "height": 548
+        }
+      ],
+      "zoom": true
     },
     {
-      "id": "ID-003",
-      "title": "Cheater",
-      "description": "Look at them Titties Bounce",
-      "type": "image",
-      "src": "assets/p3.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-004",
-      "title": "German College Student",
-      "description": "",
-      "type": "image",
-      "src": "assets/p4.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-005",
-      "title": "Sugar Baby",
-      "description": "",
-      "type": "image",
-      "src": "assets/p5.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-006",
-      "title": "Nurse",
-      "description": "",
-      "type": "image",
-      "src": "assets/p6.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-007",
-      "title": "Trophy Wife",
-      "description": "As you can see, I provide context and prove the ID so you know it's real.",
-      "type": "image",
-      "src": "assets/p7.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-008",
-      "title": "Cutie",
-      "description": "",
-      "type": "image",
-      "src": "assets/p8.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-009",
-      "title": "Skater Girl",
-      "description": "Thank god she had a tattoo to find this connection",
-      "type": "image",
-      "src": "assets/p9.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-010",
-      "title": "Sales Lady",
-      "description": "This Brazilian Beauty is part of the Brazilian Model Escorts Series",
-      "type": "image",
-      "src": "assets/p10.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-011",
-      "title": "Festival",
-      "description": "",
-      "type": "image",
-      "src": "assets/p11.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-012",
-      "title": "Braces",
-      "description": "",
-      "type": "image",
-      "src": "assets/p12.jpg",
-      "category": "ID",
-      "identified": true,
-      "rare": false
-    },
-    {
-      "id": "ID-001",
-      "title": "Escorts Sample",
-      "description": "Size of Category: 100+ videos.",
-      "type": "image",
-      "src": "assets/escort.jpg",
-      "category": "Escort",
-      "identified": false,
-      "rare": false
-    },
-    {
-      "id": "ID-006",
-      "title": "Desi",
-      "description": "Size of Category: 200+ videos.",
-      "type": "image",
-      "src": "assets/Desi.jpg",
-      "category": "Desi",
-      "identified": false,
-      "rare": false
-    },
-    {
-      "id": "ID-004",
-      "title": "Changing",
-      "description": "Size of Category: 100+ videos.",
-      "type": "image",
-      "src": "assets/changing.jpg",
-      "category": "Changing",
-      "identified": false,
-      "rare": false
-    },
-    {
-      "id": "ID-002",
-      "title": "BJ",
-      "description": "Size of Category: 100+ videos.",
-      "type": "image",
-      "src": "assets/bj.jpg",
-      "preview":"assets/bj.mp4",
-      "category": "BJ",
-      "identified": false,
-      "rare": false
-    },    
-    {
-      "id": "ID-002",
-      "title": "Window",
-      "description": "Size of Category: 60+ videos.",
-      "type": "image",
-      "src": "assets/window.jpg",
-      "gif": "assets/window.gif",
-      "category": "Window",
-      "identified": false,
-      "rare": false
-    },  
-    {
-      "id": "ID-003",
-      "title": "Car",
-      "description": "This category features various real encounters in cars. 100+ videos included.",
-      "type": "image",
-      "src": "assets/car.jpg",
-      "category": "Car",
-      "identified": false,
-      "rare": false
-    },    
-    {
-      "id": "ID-004",
-      "title": "Public",
-      "description": "Risky acts in public.",
-      "type": "image",
-      "src": "assets/public.png",
-      "category": "Public",
-      "identified": false,
-      "rare": false
-    },
-    {
-      "id": "R-003",
-      "title": "Japanese Car Series",
-      "description": "This is a real voyeur series from Japan. 40+ Videos in this unique series.",
-      "type": "image",
-      "src": "assets/jap_car.jpg",
-      "category": "Series",
-      "identified": false,
-      "rare": true
-    },
-    {
-      "id": "R-001",
-      "title": "Max Steel",
-      "description": "This series was expensive to purchase, and features 30+ videos (and counting). Some IDs available.",
-      "type": "image",
-      "src": "assets/maxsteel.jpg",
-      "category": "Series",
-      "identified": false,
-      "rare": true
-    },
-    {
-      "id": "R-002",
-      "title": "Brazilian Model Escorts Series",
-      "description": "It's much more difficult obtaining the uncensored versions. I include many with the 25+ videos (and counting) series.",
-      "type": "image",
-      "src": "assets/jc.jpg",
-      "category": "Series",
-      "identified": false,
-      "rare": true
-    },
-    {
-      "id": "R-004",
-      "title": "BDIMWF",
-      "description": "A traveling brown man who found hot escorts.",
-      "type": "image",
-      "src": "assets/bdimwf.jpg",
-      "category": "Series",
-      "identified": false,
-      "rare": true
-    },
-    {
-      "id": "R-005",
-      "title": "Linelias",
-      "description": "An Xhamster Legend who disappeared. This is the most complete collection of his works to date, including many IDs (more videos included than shown here).",
-      "type": "image",
-      "src": "assets/linelias.jpg",
-      "category": "Series",
-      "identified": false,
-      "rare": true
-    },
-    {
-      "id": "R-006",
-      "title": "Foshan369",
-      "description": "A man with expensive taste in escorts. I was one of the less than 100 subscibers to his website where he released this series. He has since disappeared.",
-      "type": "image",
-      "src": "assets/foshan.jpg",
-      "category": "Series",
-      "identified": false,
-      "rare": true
-    },
-    {
-      "id": "R-007",
-      "title": "Spanish Car",
-      "description": "Spain has amazing women.",
-      "type": "image",
-      "src": "assets/spanish-car.jpg",
-      "category": "Series",
-      "identified": false,
-      "rare": true
-    },
-    {
-      "id": "ID-005",
-      "title": "Hidden",
-      "description": "The largest category of course. This includes all videos that do not fit in a specific category.",
-      "type": "image",
-      "src": "assets/preview3.png",
-      "preview": "assets/hidden.mp4",
-      "category": "Hidden",
-      "identified": false,
-      "rare": false
+      "id": "categories",
+      "title": "Categories",
+      "description": "99% of the content is hidden/spy but grouped into a category. See examples below, more categories are provided in the membership.",
+      "items": [
+        {
+          "id": "item-013",
+          "title": "Escort",
+          "description": "400+ videos",
+          "type": "image",
+          "src": "assets/images/image-007.jpg",
+          "category": "category-b",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-014",
+          "title": "Indian / Desi",
+          "description": "400+ videos",
+          "type": "image",
+          "src": "assets/images/image-006.jpg",
+          "category": "category-e",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-015",
+          "title": "Changing",
+          "description": "400+ videos",
+          "type": "image",
+          "src": "assets/images/image-005.jpg",
+          "category": "category-g",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-016",
+          "title": "Sucking",
+          "description": "500+ videos",
+          "type": "image",
+          "src": "assets/images/image-003.jpg",
+          "category": "category-d",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-017",
+          "title": "Window",
+          "description": "200+ videos",
+          "type": "image",
+          "src": "assets/images/image-029.jpg",
+          "category": "category-f",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-018",
+          "title": "Car",
+          "description": "300+ videos",
+          "type": "image",
+          "src": "assets/images/image-004.jpg",
+          "category": "category-c",
+          "width": 1944,
+          "height": 548
+        },
+        {
+          "id": "item-024",
+          "title": "College",
+          "description": "300+ videos",
+          "type": "image",
+          "src": "assets/images/image-037.jpg",
+          "thumbnail": "assets/images/image-037-thumb.jpg",
+          "width": 2560,
+          "height": 1440,
+          "layout": "wide",
+          "category": "category-a"
+        },
+        {
+          "id": "item-028",
+          "title": "Camera Shy",
+          "description": "50+ videos",
+          "type": "image",
+          "src": "assets/images/image-038.jpg",
+          "category": "category-h",
+          "width": 2560,
+          "height": 1440,
+          "thumbnail": "assets/images/image-038-thumb.jpg",
+          "layout": "wide"
+        },
+        {
+          "id": "item-029",
+          "title": "Cheating",
+          "description": "200+ videos",
+          "type": "image",
+          "src": "assets/images/image-039.jpg",
+          "category": "category-i",
+          "width": 2560,
+          "height": 1440,
+          "thumbnail": "assets/images/image-039-thumb.jpg",
+          "layout": "wide"
+        },
+        {
+          "id": "item-030",
+          "title": "Asian",
+          "description": "1000+ videos I also organize this into many subcategories, like Chinese, Korean, Vietnamese, Thai, Japanese, Indonesian, and Pinay.",
+          "type": "image",
+          "src": "assets/images/image-040.jpg",
+          "category": "category-j",
+          "width": 2560,
+          "height": 1440,
+          "thumbnail": "assets/images/image-040-thumb.jpg",
+          "layout": "wide"
+        },
+        {
+          "id": "item-031",
+          "title": "Latina",
+          "description": "1000+ videos",
+          "type": "image",
+          "src": "assets/images/image-043.jpg",
+          "thumbnail": "assets/images/image-043-thumb.jpg",
+          "width": 2560,
+          "height": 1440,
+          "layout": "wide",
+          "category": "category-latina"
+        }
+      ],
+      "categories": [
+        {
+          "id": "category-a",
+          "title": "College"
+        },
+        {
+          "id": "category-b",
+          "title": "Escort"
+        },
+        {
+          "id": "category-c",
+          "title": "Car"
+        },
+        {
+          "id": "category-d",
+          "title": "Sucking"
+        },
+        {
+          "id": "category-e",
+          "title": "Indian / Desi"
+        },
+        {
+          "id": "category-f",
+          "title": "Window"
+        },
+        {
+          "id": "category-g",
+          "title": "Changing"
+        },
+        {
+          "id": "category-h",
+          "title": "Camera Shy"
+        },
+        {
+          "id": "category-i",
+          "title": "Cheating"
+        },
+        {
+          "id": "category-j",
+          "title": "Asian"
+        },
+        {
+          "id": "category-latina",
+          "title": "Latina"
+        }
+      ],
+      "zoom": true
     }
   ]
 }

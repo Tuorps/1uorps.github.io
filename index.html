@@ -1,149 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tuorps Preview</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Tuorps Preview Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="age-gate.js" defer></script>
 </head>
-
-<body>
-  <main class="wrap">
-
-    <header class="top">
-      <div class="brandRow">
-        <div class="logo">Tuorps</div>
+<body class="age-check">
+  <section id="ageGate" class="age-gate" role="dialog" aria-modal="true" aria-labelledby="ageTitle" aria-describedby="ageDescription">
+    <div class="age-card">
+      <p class="age-label">Adults only</p>
+      <h2 id="ageTitle">Are you 18 or older?</h2>
+      <p id="ageDescription">This site contains adult content. You must be 18 or older to enter.</p>
+      <div class="age-actions"><button id="ageEnter" class="age-enter" type="button">I’m 18 or older</button><a class="age-leave" href="https://www.google.com/" rel="noreferrer">Leave site</a></div>
+      <noscript><p>Please enable JavaScript to confirm your age and view the site.</p></noscript>
+    </div>
+  </section>
+  <div id="siteContent" hidden inert>
+  <a class="skip-link" href="#gallery">Skip to gallery</a>
+  <header class="masthead wrap">
+    <a class="brand" href="#top" aria-label="Preview home">Tuorps<span class="brand-dot"></span></a>
+  </header>
+  <main id="top">
+    <section class="hero wrap intro-facts" aria-labelledby="introTitle">
+      <h1 id="introTitle">5,000+ authentic amateur videos.</h1>
+      <div class="intro-note">
+        <p class="intro-lead">Over the years, I’ve gathered thousands of videos. Now I’m opening the vault.</p>
+        <p>Everything is carefully organized into categories and collections, so it's easy to browse and find what interests you.</p>
+        <p>I’ve also added context and social links to many of the videos and collections. You can see some examples in the Socials section right below.</p>
+        <p>I created this group to share the best videos I’ve found. I’ve spent years researching and buying collections, always looking for the highest-quality versions available. Your membership helps cover the tools and costs involved, so I can keep finding and organizing more.</p>
+        <p>This preview site shows just a small sample of the full collection, with <strong>many more categories and collections included in the membership.</strong>.</p>
+        <p class="intro-links"><span>More previews</span><a href="https://www.redgifs.com/users/tuorps1" target="_blank" rel="noopener noreferrer">RedGIFs &#8599;</a><a href="https://www.erome.com/tuorps100" target="_blank" rel="noopener noreferrer">Erome &#8599;</a></p>
       </div>
-
-      <section class="intro">
-        <div class="label">Description / Intro</div>
-<div class="introText">
-  <p>Welcome — this is a simple preview page for my content.</p>
-
-  <p>
-    To purchase, message <strong>@Tuorps_PaymentBot</strong> on Telegram to get started.
-    <strong>Lifetime VIP is $45.</strong> It comes with everything.
-  </p>
-
-  <p>
-    I update the library regularly as I’m always finding and adding more. After purchase, everything is easy to view and download.
-    My goal is to keep this simple, reliable, and a solid deal.
-  </p>
-
-  <p>
-    Below are examples of what’s included, organized by category with an emphasis on real, candid content.
-    Each category only shows a few random screenshots so you know what to expect, but there are hundreds more within each category. There are also many more categories not listed below.
-  </p>
-
-  <p>Rarest of all is the Identified section — videos that include real names or social profiles. 
-    These aren’t posted anywhere else; in almost every case, I found the source myself. This is just a small taste of the full collection.
-  </p>
-
-  <p><strong>More previews:</strong></p>
-  <p>
-    <a href="https://www.redgifs.com/users/tuorps1" target="_blank" rel="noopener noreferrer">
-      redgifs.com/users/tuorps1
-    </a><br>
-    <a href="https://www.erome.com/tuorps100" target="_blank" rel="noopener noreferrer">
-      erome.com/tuorps100
-    </a>
-  </p>
-</div>
-
-      </section>
-    </header>
-
-    <!-- Sections injected by script.js (Identified first) -->
-    <section class="section" id="identifiedSection" aria-label="Identified"></section>
-    <section class="section" id="rareSection" aria-label="Rare Series"></section>
-    <section class="section" id="categoriesSection" aria-label="Categories"></section>
-
-    <section class="faq" id="faq">
-  <h2>FAQ</h2>
-
-  <details>
-    <summary>How is content accessed?</summary>
-    <p>After purchase, links will be sent from @Tuorps_PaymentBot on Telegram to various storage websites, where you can view and download content.</p>
-  </details>
-
-  <details>
-    <summary>Why can't you share content on Telegram?</summary>
-    <p>The channels have been repeatedly removed, so this will be the method going forward.</p>
-  </details>
-
-  <details>
-    <summary>When is new content added?</summary>
-    <p>There is no set schedule, but every 1-2 months. The content additions are generally very large, and announced via telegram so you know when it happens.</p>
-  </details>
-
-  <details>
-    <summary>Do you trade or take requests?</summary>
-    <p>Yes, feel free to message me after joining.</p>
-  </details>
-
-  <details>
-    <summary>Does the content stay up forever?</summary>
-    <p>Yes, you always have access.</p>
-  </details>
-</section>
-
-
-    <footer class="foot">
-      <small>© <span id="year"></span> Tuorps</small>
-    </footer>
-
+      <aside class="intro-fact-list" aria-label="Access details">
+        <div class="intro-fact"><h2>Lifetime access</h2><p class="intro-fact-price">$45 USD</p></div>
+        <div class="intro-fact"><h2>How</h2><p>Message <a href="https://t.me/Tuorps_Paymentbot" target="_blank" rel="noopener noreferrer">@Tuorps_Paymentbot</a><br>on Telegram <span aria-hidden="true">↗</span></p></div>
+        <div class="intro-fact"><h2>Full collection</h2><p>5,000+ videos, still growing</p></div>
+      </aside>
+      <div class="intro-preview-count"><span class="library-count" id="libraryCount">Loading gallery…</span></div>
+    </section>
+    <nav class="section-nav" aria-label="Gallery sections"><div class="wrap nav-inner" id="sectionNav"></div></nav>
+    <div class="wrap" id="gallery"><div id="preview-sections" aria-busy="true"><p class="status" role="status">Loading previews…</p></div></div>
+    <section class="faq wrap" aria-labelledby="faqTitle">
+      <div><p class="eyebrow">GOOD TO KNOW</p><h2 id="faqTitle">A few details.</h2></div>
+      <div class="faq-list">
+        <details><summary>How is content accessed?</summary><p>A private link will be provided where you can view/download all of the content. It's fully encrypted and secure.</p></details>
+        <details><summary>How is content organized?</summary><p>Videos are organized simply into folders, within the specific category or collection.</p></details>
+      </div>
+    </section>
   </main>
-
-  <!-- Modal (hidden by default) -->
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modalBackdrop" id="modalBackdrop"></div>
-    <div class="modalPanel" role="dialog" aria-modal="true" aria-label="Preview">
-      <button class="modalClose" id="modalClose" type="button" aria-label="Close">×</button>
-      <div class="modalMedia" id="modalMedia"></div>
-      <div class="modalMeta">
-        <div class="modalTitle" id="modalTitle"></div>
-        <div class="modalDesc" id="modalDesc"></div>
-      </div>
+  <footer class="foot wrap"><span>© <span id="year"></span> Preview</span><a href="#top">Back to top ↑</a></footer>
+  <dialog id="viewer" aria-labelledby="viewerTitle" aria-describedby="viewerDesc">
+    <div class="viewer-shell">
+      <header class="viewer-bar"><span id="viewerPosition"></span><div class="viewer-actions"><button class="icon-button" id="viewerZoomOut" aria-label="Zoom out" hidden>−</button><button class="zoom-fit" id="viewerFit" hidden>Fit image</button><button class="icon-button" id="viewerZoom" aria-label="Zoom in" hidden>+</button><button class="icon-button" id="viewerClose" aria-label="Close preview">✕</button></div></header>
+      <p class="sr-only" id="viewerStatus" aria-live="polite"></p>
+      <div class="viewer-stage" id="viewerMedia"></div>
+      <div class="viewer-bottom"><div class="viewer-meta"><h2 id="viewerTitle"></h2><p id="viewerDesc"></p></div><div class="viewer-controls"><button class="icon-button" id="viewerPrev" aria-label="Previous preview">←</button><button class="icon-button" id="viewerNext" aria-label="Next preview">→</button></div></div>
     </div>
+  </dialog>
+  <noscript><p class="wrap">Please enable JavaScript to browse this gallery.</p></noscript>
   </div>
-
-  <script src="script.js"></script>
-  <div id="ageGate" class="age-gate" aria-hidden="true">
-  <div class="age-card">
-    <h2>18+ Only</h2>
-    <p>You must be 18+ to enter. By continuing, you confirm you are at least 18 years old.</p>
-    <div class="age-actions">
-      <button id="ageYes" class="btn">I’m 18+ — Enter</button>
-      <a id="ageNo" class="btn btn-secondary" href="https://www.google.com">Exit</a>
-    </div>
-    <p class="age-note"></p>
-  </div>
-</div>
-
-<script>
-  (function() {
-    const KEY = "age_ok_v1";
-    const gate = document.getElementById("ageGate");
-    const yes = document.getElementById("ageYes");
-
-    if (!gate || !yes) return;
-
-    const ok = localStorage.getItem(KEY) === "1";
-    if (!ok) {
-      gate.classList.add("show");
-      gate.setAttribute("aria-hidden", "false");
-    }
-
-    yes.addEventListener("click", function() {
-      localStorage.setItem(KEY, "1");
-      gate.classList.remove("show");
-      gate.setAttribute("aria-hidden", "true");
-    });
-  })();
-</script>
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-
-
 </body>
 </html>
